@@ -1,0 +1,86 @@
+int RedCross = 13;
+int WhiteCross = 12;
+int RedCross2 = 11;
+int WhiteCross2 = 10;
+int Red1 = 9;
+int Yellow1 = 8;
+int Green1 = 7;
+int Red2 = 6;
+int Yellow2 = 5;
+int Green2 = 4;
+
+int Button1 = 3;
+int Button2 = 2;
+
+void setup ()
+{
+  pinMode (RedCross,OUTPUT);
+  pinMode (WhiteCross,OUTPUT);
+  pinMode (RedCross2,OUTPUT);
+  pinMode (WhiteCross2,OUTPUT);
+  pinMode (Red1,OUTPUT);
+  pinMode (Yellow1,OUTPUT);
+  pinMode (Green1,OUTPUT);
+  pinMode (Red2,OUTPUT);
+  pinMode (Yellow2,OUTPUT);
+  pinMode (Green2,OUTPUT);
+  
+  pinMode (Button1,INPUT);
+  pinMode (Button2,INPUT);
+  
+}
+
+void loop ()
+{
+ digitalWrite(RedCross,LOW); 
+ digitalWrite(RedCross2,HIGH); 
+ digitalWrite(WhiteCross,HIGH); 
+ digitalWrite(WhiteCross2,LOW); 
+ digitalWrite(Red1,HIGH); 
+ digitalWrite(Red2,LOW); 
+ digitalWrite(Yellow1,LOW); 
+ digitalWrite(Yellow2,LOW); 
+ digitalWrite(Green1,LOW);
+ digitalWrite(Green2,HIGH);  
+         
+         delay(10000); 
+         
+ digitalWrite(RedCross,HIGH); 
+ digitalWrite(RedCross2,HIGH); 
+ digitalWrite(WhiteCross,LOW); 
+ digitalWrite(WhiteCross2,LOW); 
+ digitalWrite(Red1,HIGH); 
+ digitalWrite(Red2,LOW); 
+ digitalWrite(Yellow1,LOW); 
+ digitalWrite(Yellow2,HIGH); 
+ digitalWrite(Green1,LOW);
+ digitalWrite(Green2,LOW); 
+ 
+         delay(1500);
+ 
+ digitalWrite(RedCross,HIGH); 
+ digitalWrite(RedCross2,HIGH); 
+ digitalWrite(WhiteCross,LOW); 
+ digitalWrite(WhiteCross2,LOW); 
+ digitalWrite(Red1,HIGH); 
+ digitalWrite(Red2,HIGH); 
+ digitalWrite(Yellow1,LOW); 
+ digitalWrite(Yellow2,LOW); 
+ digitalWrite(Green1,LOW);
+ digitalWrite(Green2,LOW);
+ 
+           delay(1000);
+ 
+ digitalWrite(RedCross,HIGH); 
+ digitalWrite(RedCross2,LOW); 
+ digitalWrite(WhiteCross,LOW); 
+ digitalWrite(WhiteCross2,HIGH); 
+ digitalWrite(Red1,LOW); 
+ digitalWrite(Red2,HIGH); 
+ digitalWrite(Yellow1,LOW); 
+ digitalWrite(Yellow2,LOW); 
+ digitalWrite(Green1,HIGH);
+ digitalWrite(Green2,LOW);
+ 
+           delay(10000);
+}
